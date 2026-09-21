@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs_shadcn_usm_ts_boilerplate
 
-## Getting Started
+A Next.js app-router starter with shadcn/ui and usm-redux state — every shadcn component already installed, so you can start building instead of running `add` commands.
 
-First, run the development server:
+## What's included
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- **Next.js app router** with TypeScript
+- **shadcn/ui components already installed** — accordion through tooltip, on Tailwind + Radix
+- **usm-redux** state with a `StatesController`, provided app-wide
+- **Providers split out** — `app/providers.tsx` and `app/redux-provider.tsx`, so adding another is one line
+- **Lucide icons**, `date-fns`, `cmdk` and `react-day-picker` already pulled in
+- **ESLint** with `eslint-config-next`
+
+## Project layout
+
+```
+app/layout.tsx          root layout, wraps providers
+app/providers.tsx       theme and friends
+app/redux-provider.tsx  usm-redux store provider
+app/page.tsx            your first page
+lib/StatesController.ts the usm-redux state
+lib/utils.ts            the cn() helper
+components/ui/          the shadcn components
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate.git
+cd nextjs_shadcn_usm_ts_boilerplate
+npm install
+npm run dev        # http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+npm run build
+npm run lint
+```
 
-## Learn More
+## Related boilerplates
 
-To learn more about Next.js, take a look at the following resources:
+- [nextjs-typescript-overmind-shadcn-boilerplate](https://github.com/p32929/nextjs-typescript-overmind-shadcn-boilerplate) — same UI stack, Overmind instead of usm-redux
+- [react_shadcn_ts_usm_boilerplate](https://github.com/p32929/react_shadcn_ts_usm_boilerplate) — the plain React (Vite) version
+- [nextjs_typescript_materialui_usm_boilerplate](https://github.com/p32929/nextjs_typescript_materialui_usm_boilerplate) — usm-redux with Material-UI instead of shadcn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are warmly welcomed and greatly appreciated! Whether it's a bug fix, new feature, or improvement, your input helps make this project better for everyone.
 
-## Deploy on Vercel
+Before submitting a pull request, please:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create an issue describing the feature or bug fix you'd like to work on
+2. Wait for discussion and approval to ensure alignment with project goals
+3. Fork the repository and create your feature branch
+4. Submit your pull request with a clear description of changes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This approach helps avoid duplicate efforts and ensures smooth collaboration. Thank you for considering contributing!
+
+## Share
+
+Sharing this repository with your friends is just one click away from here
+
+[![facebook](https://user-images.githubusercontent.com/6418354/179013321-ac1d1452-0689-493f-9066-940cf2302b6e.png)](https://www.facebook.com/sharer/sharer.php?u=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
+[![twitter](https://user-images.githubusercontent.com/6418354/179013351-7d8d6d1c-4ce2-46ab-bef8-4c4765a1b888.png)](https://twitter.com/intent/tweet?url=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
+[![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
+[![pocket](https://user-images.githubusercontent.com/6418354/179013334-b095c45f-becf-49f4-9ee1-5a731a9b1f85.png)](https://getpocket.com/save?url=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
+[![pinterest](https://user-images.githubusercontent.com/6418354/179013331-44cd9206-11b1-4b65-becb-5863b61c828f.png)](https://pinterest.com/pin/create/button/?url=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
+[![reddit](https://user-images.githubusercontent.com/6418354/179013338-7416ae3f-73ba-4522-86e1-1374d7082d22.png)](https://www.reddit.com/submit?url=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
+[![linkedin](https://user-images.githubusercontent.com/6418354/179013327-ca7b7102-1da8-4b1c-858f-1a6e5f21bd70.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
+[![whatsapp](https://user-images.githubusercontent.com/6418354/179013353-f477fa0b-3e6f-4138-a357-c9991b23ff88.png)](https://api.whatsapp.com/send?text=https://github.com/p32929/nextjs_shadcn_usm_ts_boilerplate/)
